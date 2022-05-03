@@ -3,7 +3,8 @@ node {
   stage('Checkout') {
     checkout scm
   }
-    stage('SonarQube analysis') {
+}
+   /* stage('SonarQube analysis') {
         // requires SonarQube Scanner 2.8+
         def scannerHome = tool 'Sonar Scanner';
         withSonarQubeEnv('SonarQube') {
@@ -52,11 +53,11 @@ def Properties getProperties(filename) {
 @NonCPS
 def jsonParse(def json) {
     new groovy.json.JsonSlurperClassic().parseText(json)
-}
+} */
 
 
     
 
   
 //Sonar Scanner
-//my sonarqube
+//my sonarqube 
