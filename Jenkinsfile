@@ -3,6 +3,13 @@ node {
   stage('Checkout') {
     checkout scm
   }
+  stage('send email notification'){
+    emailext body: ***Build is over !!
+      Regards,
+      Manjup
+      9346494379
+      ***, subject: 'Build is over!!!', to: 'manjumanjup72@gmail.com','ajesh.reddy@ecosmob.com'
+  }
 }
    /* stage('SonarQube analysis') {
         // requires SonarQube Scanner 2.8+
