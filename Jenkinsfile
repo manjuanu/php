@@ -6,7 +6,7 @@ node {
   stage('send email notification') {
     emailext body: '''Build is success
 Regards,
-manju P''', subject: 'Build is success', to: 'manjumanjup72@gmail.com'
+manju P''', subject: 'Build is success', to: 'manjumanjup72@gmail.com','ajesh.reddy@ecosmob.com'
 }
 }
   
