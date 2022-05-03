@@ -3,14 +3,20 @@ node {
   stage('Checkout') {
     checkout scm
   }
-  stage('send email notification'){
-    emailext body: ***Build is over !!
-      Regards,
-      Manjup
-      9346494379
-      ***, subject: 'Build is over!!!', to: 'manjumanjup72@gmail.com','ajesh.reddy@ecosmob.com'
-  }
+  stage('send email notification') {
+    emailext body: '''Build is success
+Regards,
+manju P''', subject: 'Build is success', to: 'manjumanjup72@gmail.com'
 }
+}
+  
+  
+  
+  
+  
+  
+  
+  
    /* stage('SonarQube analysis') {
         // requires SonarQube Scanner 2.8+
         def scannerHome = tool 'Sonar Scanner';
